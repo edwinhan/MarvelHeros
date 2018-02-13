@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="top" id="iN0-l3-epB" customClass="MHListHeaderView" customModule="MarvelHeros" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uu-WD-7h5">
+                    <rect key="frame" x="10" y="57" width="349" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ZKk-GH-1KI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" preservesSuperviewLayoutMargins="YES" placeholder="Search by begining characters " translatesAutoresizingMaskIntoConstraints="NO" id="MtW-y1-Rd9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="ZWN-Ir-gmd"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Uu-WD-7h5" secondAttribute="trailing" constant="16" id="7ze-lo-SPI"/>
+                <constraint firstItem="4Uu-WD-7h5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="CiO-Gl-Ku9"/>
+                <constraint firstItem="MtW-y1-Rd9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aDQ-dl-mlU"/>
+                <constraint firstItem="MtW-y1-Rd9" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="eMK-hV-E2K"/>
+                <constraint firstItem="4Uu-WD-7h5" firstAttribute="top" secondItem="MtW-y1-Rd9" secondAttribute="bottom" constant="1" id="hJG-0f-qVQ"/>
+                <constraint firstItem="MtW-y1-Rd9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="m0O-jB-0GQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="characterSearchBar" destination="MtW-y1-Rd9" id="Sat-9K-ix2"/>
+                <outlet property="resultDescriptionLabel" destination="4Uu-WD-7h5" id="OwL-eR-W8l"/>
+            </connections>
+            <point key="canvasLocation" x="76.5" y="99"/>
+        </view>
+    </objects>
+</document>

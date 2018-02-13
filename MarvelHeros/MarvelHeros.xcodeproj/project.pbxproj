@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8DA837D2030D59B00C86BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA837C2030D59B00C86BFA /* AppDelegate.swift */; };
+		E8DA83842030D59B00C86BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83832030D59B00C86BFA /* Assets.xcassets */; };
+		E8DA83872030D59B00C86BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83852030D59B00C86BFA /* LaunchScreen.storyboard */; };
+		E8DA839A203122F000C86BFA /* MHHeroListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA8399203122F000C86BFA /* MHHeroListViewController.swift */; };
+		E8DA839D2031235800C86BFA /* MHHeroSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA839B2031235800C86BFA /* MHHeroSummaryTableViewCell.swift */; };
+		E8DA839E2031235800C86BFA /* MHHeroSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA839C2031235800C86BFA /* MHHeroSummaryTableViewCell.xib */; };
+		E8DA83A0203140EC00C86BFA /* MHCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA839F203140EC00C86BFA /* MHCharacterModel.swift */; };
+		E8DA83A2203141E100C86BFA /* MHHeroListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83A1203141E100C86BFA /* MHHeroListViewModel.swift */; };
+		E8DA83A4203142A600C86BFA /* MHBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83A3203142A600C86BFA /* MHBaseApi.swift */; };
+		E8DA83A62031433C00C86BFA /* MHConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83A52031433C00C86BFA /* MHConstants.swift */; };
+		E8DA83A920315B9700C86BFA /* MHCharactersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83A820315B9700C86BFA /* MHCharactersApi.swift */; };
+		E8DA83AD203229DE00C86BFA /* MHHeroListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83AC203229DE00C86BFA /* MHHeroListViewController.xib */; };
+		E8DA83AF20322AE800C86BFA /* MHLoadingMoreIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83AE20322AE800C86BFA /* MHLoadingMoreIndicatorView.swift */; };
+		E8DA83B120322AF900C86BFA /* MHLoadingMoreIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83B020322AF900C86BFA /* MHLoadingMoreIndicatorView.xib */; };
+		E8DA83B620324A4B00C86BFA /* MHImageDowloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83B520324A4B00C86BFA /* MHImageDowloader.swift */; };
+		E8DA83BA20325F4000C86BFA /* MHListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83B920325F4000C86BFA /* MHListHeaderView.swift */; };
+		E8DA83BC20325F4E00C86BFA /* MHListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83BB20325F4E00C86BFA /* MHListHeaderView.xib */; };
+		E8DA83C42032652B00C86BFA /* MHFavoriteCharacterWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83C32032652B00C86BFA /* MHFavoriteCharacterWrapper.swift */; };
+		E8DA83C72032729F00C86BFA /* MHHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83C52032729F00C86BFA /* MHHeroDetailViewController.swift */; };
+		E8DA83C82032729F00C86BFA /* MHHeroDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83C62032729F00C86BFA /* MHHeroDetailViewController.xib */; };
+		E8DA83CA2032740500C86BFA /* MHHeroDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83C92032740500C86BFA /* MHHeroDetailHeaderView.swift */; };
+		E8DA83CC2032741700C86BFA /* MHHeroDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83CB2032741700C86BFA /* MHHeroDetailHeaderView.xib */; };
+		E8DA83CE20327EB100C86BFA /* MHHeroDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83CD20327EB100C86BFA /* MHHeroDetailViewModel.swift */; };
+		E8DA83D020327F3400C86BFA /* MHCharacterDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83CF20327F3400C86BFA /* MHCharacterDetailModel.swift */; };
+		E8DA83D220327F6300C86BFA /* MHCharacterComicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83D120327F6300C86BFA /* MHCharacterComicsModel.swift */; };
+		E8DA83D420327F8500C86BFA /* MHCharacterSeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83D320327F8500C86BFA /* MHCharacterSeriesModel.swift */; };
+		E8DA83D620327FA900C86BFA /* MHCharacterStoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83D520327FA900C86BFA /* MHCharacterStoriesModel.swift */; };
+		E8DA83D820327FC600C86BFA /* MHCharacterEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83D720327FC600C86BFA /* MHCharacterEventsModel.swift */; };
+		E8DA83DA2032803300C86BFA /* MHCharacterDetailApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83D92032803300C86BFA /* MHCharacterDetailApi.swift */; };
+		E8DA83DD20328F9600C86BFA /* MHHeroDetailItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83DB20328F9600C86BFA /* MHHeroDetailItemTableViewCell.swift */; };
+		E8DA83DE20328F9600C86BFA /* MHHeroDetailItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83DC20328F9600C86BFA /* MHHeroDetailItemTableViewCell.xib */; };
+		E8DA83E02032921C00C86BFA /* MHHeroDetailSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83DF2032921C00C86BFA /* MHHeroDetailSectionHeaderView.swift */; };
+		E8DA83E22032922E00C86BFA /* MHHeroDetailSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83E12032922E00C86BFA /* MHHeroDetailSectionHeaderView.xib */; };
+		E8DA83E42032974600C86BFA /* MHCharacterComicsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83E32032974600C86BFA /* MHCharacterComicsApi.swift */; };
+		E8DA83E62032976400C86BFA /* MHCharacterSeriesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83E52032976400C86BFA /* MHCharacterSeriesApi.swift */; };
+		E8DA83E82032977200C86BFA /* MHCharacterEventsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83E72032977200C86BFA /* MHCharacterEventsApi.swift */; };
+		E8DA83EA2032978200C86BFA /* MHCharacterStoriesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA83E92032978200C86BFA /* MHCharacterStoriesApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8DA83792030D59B00C86BFA /* MarvelHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DA837C2030D59B00C86BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8DA83832030D59B00C86BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8DA83862030D59B00C86BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8DA83882030D59B00C86BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DA8399203122F000C86BFA /* MHHeroListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroListViewController.swift; sourceTree = "<group>"; };
+		E8DA839B2031235800C86BFA /* MHHeroSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		E8DA839C2031235800C86BFA /* MHHeroSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHeroSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		E8DA839F203140EC00C86BFA /* MHCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterModel.swift; sourceTree = "<group>"; };
+		E8DA83A1203141E100C86BFA /* MHHeroListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroListViewModel.swift; sourceTree = "<group>"; };
+		E8DA83A3203142A600C86BFA /* MHBaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHBaseApi.swift; sourceTree = "<group>"; };
+		E8DA83A52031433C00C86BFA /* MHConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHConstants.swift; sourceTree = "<group>"; };
+		E8DA83A820315B9700C86BFA /* MHCharactersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharactersApi.swift; sourceTree = "<group>"; };
+		E8DA83AA2031877500C86BFA /* MarvelHeros-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarvelHeros-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8DA83AC203229DE00C86BFA /* MHHeroListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHeroListViewController.xib; sourceTree = "<group>"; };
+		E8DA83AE20322AE800C86BFA /* MHLoadingMoreIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHLoadingMoreIndicatorView.swift; sourceTree = "<group>"; };
+		E8DA83B020322AF900C86BFA /* MHLoadingMoreIndicatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHLoadingMoreIndicatorView.xib; sourceTree = "<group>"; };
+		E8DA83B520324A4B00C86BFA /* MHImageDowloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHImageDowloader.swift; sourceTree = "<group>"; };
+		E8DA83B920325F4000C86BFA /* MHListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHListHeaderView.swift; sourceTree = "<group>"; };
+		E8DA83BB20325F4E00C86BFA /* MHListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHListHeaderView.xib; sourceTree = "<group>"; };
+		E8DA83C32032652B00C86BFA /* MHFavoriteCharacterWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHFavoriteCharacterWrapper.swift; sourceTree = "<group>"; };
+		E8DA83C52032729F00C86BFA /* MHHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroDetailViewController.swift; sourceTree = "<group>"; };
+		E8DA83C62032729F00C86BFA /* MHHeroDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHeroDetailViewController.xib; sourceTree = "<group>"; };
+		E8DA83C92032740500C86BFA /* MHHeroDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroDetailHeaderView.swift; sourceTree = "<group>"; };
+		E8DA83CB2032741700C86BFA /* MHHeroDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHeroDetailHeaderView.xib; sourceTree = "<group>"; };
+		E8DA83CD20327EB100C86BFA /* MHHeroDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroDetailViewModel.swift; sourceTree = "<group>"; };
+		E8DA83CF20327F3400C86BFA /* MHCharacterDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterDetailModel.swift; sourceTree = "<group>"; };
+		E8DA83D120327F6300C86BFA /* MHCharacterComicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterComicsModel.swift; sourceTree = "<group>"; };
+		E8DA83D320327F8500C86BFA /* MHCharacterSeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterSeriesModel.swift; sourceTree = "<group>"; };
+		E8DA83D520327FA900C86BFA /* MHCharacterStoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterStoriesModel.swift; sourceTree = "<group>"; };
+		E8DA83D720327FC600C86BFA /* MHCharacterEventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterEventsModel.swift; sourceTree = "<group>"; };
+		E8DA83D92032803300C86BFA /* MHCharacterDetailApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterDetailApi.swift; sourceTree = "<group>"; };
+		E8DA83DB20328F9600C86BFA /* MHHeroDetailItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroDetailItemTableViewCell.swift; sourceTree = "<group>"; };
+		E8DA83DC20328F9600C86BFA /* MHHeroDetailItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHeroDetailItemTableViewCell.xib; sourceTree = "<group>"; };
+		E8DA83DF2032921C00C86BFA /* MHHeroDetailSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHeroDetailSectionHeaderView.swift; sourceTree = "<group>"; };
+		E8DA83E12032922E00C86BFA /* MHHeroDetailSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHeroDetailSectionHeaderView.xib; sourceTree = "<group>"; };
+		E8DA83E32032974600C86BFA /* MHCharacterComicsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterComicsApi.swift; sourceTree = "<group>"; };
+		E8DA83E52032976400C86BFA /* MHCharacterSeriesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterSeriesApi.swift; sourceTree = "<group>"; };
+		E8DA83E72032977200C86BFA /* MHCharacterEventsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterEventsApi.swift; sourceTree = "<group>"; };
+		E8DA83E92032978200C86BFA /* MHCharacterStoriesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCharacterStoriesApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8DA83762030D59B00C86BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8DA83702030D59B00C86BFA = {
+			isa = PBXGroup;
+			children = (
+				E8DA837B2030D59B00C86BFA /* MarvelHeros */,
+				E8DA837A2030D59B00C86BFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8DA837A2030D59B00C86BFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83792030D59B00C86BFA /* MarvelHeros.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8DA837B2030D59B00C86BFA /* MarvelHeros */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA838E20311F6400C86BFA /* Classes */,
+				E8DA83982031222700C86BFA /* Resources */,
+			);
+			path = MarvelHeros;
+			sourceTree = "<group>";
+		};
+		E8DA838E20311F6400C86BFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA837C2030D59B00C86BFA /* AppDelegate.swift */,
+				E8DA839020311F8F00C86BFA /* General */,
+				E8DA839120311FB400C86BFA /* Modules */,
+				E8DA83972031207D00C86BFA /* APIs */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E8DA839020311F8F00C86BFA /* General */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83A52031433C00C86BFA /* MHConstants.swift */,
+				E8DA83C22032650500C86BFA /* Common */,
+				E8DA83B42032469900C86BFA /* Utils */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		E8DA839120311FB400C86BFA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83922031200700C86BFA /* MarvelHeroList */,
+				E8DA83BD2032645C00C86BFA /* MarvelHeroDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E8DA83922031200700C86BFA /* MarvelHeroList */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83932031202F00C86BFA /* Controller */,
+				E8DA83952031204100C86BFA /* View */,
+				E8DA83942031203900C86BFA /* Model */,
+				E8DA83962031204A00C86BFA /* ViewModel */,
+			);
+			path = MarvelHeroList;
+			sourceTree = "<group>";
+		};
+		E8DA83932031202F00C86BFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA8399203122F000C86BFA /* MHHeroListViewController.swift */,
+				E8DA83AC203229DE00C86BFA /* MHHeroListViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E8DA83942031203900C86BFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA839F203140EC00C86BFA /* MHCharacterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8DA83952031204100C86BFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA839B2031235800C86BFA /* MHHeroSummaryTableViewCell.swift */,
+				E8DA839C2031235800C86BFA /* MHHeroSummaryTableViewCell.xib */,
+				E8DA83AE20322AE800C86BFA /* MHLoadingMoreIndicatorView.swift */,
+				E8DA83B020322AF900C86BFA /* MHLoadingMoreIndicatorView.xib */,
+				E8DA83B920325F4000C86BFA /* MHListHeaderView.swift */,
+				E8DA83BB20325F4E00C86BFA /* MHListHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8DA83962031204A00C86BFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83A1203141E100C86BFA /* MHHeroListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E8DA83972031207D00C86BFA /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83A3203142A600C86BFA /* MHBaseApi.swift */,
+				E8DA83A820315B9700C86BFA /* MHCharactersApi.swift */,
+				E8DA83D92032803300C86BFA /* MHCharacterDetailApi.swift */,
+				E8DA83E32032974600C86BFA /* MHCharacterComicsApi.swift */,
+				E8DA83E52032976400C86BFA /* MHCharacterSeriesApi.swift */,
+				E8DA83E72032977200C86BFA /* MHCharacterEventsApi.swift */,
+				E8DA83E92032978200C86BFA /* MHCharacterStoriesApi.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		E8DA83982031222700C86BFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83832030D59B00C86BFA /* Assets.xcassets */,
+				E8DA83852030D59B00C86BFA /* LaunchScreen.storyboard */,
+				E8DA83882030D59B00C86BFA /* Info.plist */,
+				E8DA83AA2031877500C86BFA /* MarvelHeros-Bridging-Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E8DA83B42032469900C86BFA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83B520324A4B00C86BFA /* MHImageDowloader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E8DA83BD2032645C00C86BFA /* MarvelHeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83BE2032647000C86BFA /* Controller */,
+				E8DA83BF2032647A00C86BFA /* View */,
+				E8DA83C02032647F00C86BFA /* Model */,
+				E8DA83C12032648D00C86BFA /* ViewModel */,
+			);
+			path = MarvelHeroDetail;
+			sourceTree = "<group>";
+		};
+		E8DA83BE2032647000C86BFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83C52032729F00C86BFA /* MHHeroDetailViewController.swift */,
+				E8DA83C62032729F00C86BFA /* MHHeroDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E8DA83BF2032647A00C86BFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83C92032740500C86BFA /* MHHeroDetailHeaderView.swift */,
+				E8DA83CB2032741700C86BFA /* MHHeroDetailHeaderView.xib */,
+				E8DA83DB20328F9600C86BFA /* MHHeroDetailItemTableViewCell.swift */,
+				E8DA83DC20328F9600C86BFA /* MHHeroDetailItemTableViewCell.xib */,
+				E8DA83DF2032921C00C86BFA /* MHHeroDetailSectionHeaderView.swift */,
+				E8DA83E12032922E00C86BFA /* MHHeroDetailSectionHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8DA83C02032647F00C86BFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83CF20327F3400C86BFA /* MHCharacterDetailModel.swift */,
+				E8DA83D120327F6300C86BFA /* MHCharacterComicsModel.swift */,
+				E8DA83D320327F8500C86BFA /* MHCharacterSeriesModel.swift */,
+				E8DA83D520327FA900C86BFA /* MHCharacterStoriesModel.swift */,
+				E8DA83D720327FC600C86BFA /* MHCharacterEventsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8DA83C12032648D00C86BFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83CD20327EB100C86BFA /* MHHeroDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E8DA83C22032650500C86BFA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA83C32032652B00C86BFA /* MHFavoriteCharacterWrapper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8DA83782030D59B00C86BFA /* MarvelHeros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DA838B2030D59B00C86BFA /* Build configuration list for PBXNativeTarget "MarvelHeros" */;
+			buildPhases = (
+				E8DA83752030D59B00C86BFA /* Sources */,
+				E8DA83762030D59B00C86BFA /* Frameworks */,
+				E8DA83772030D59B00C86BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarvelHeros;
+			productName = MarvelHeros;
+			productReference = E8DA83792030D59B00C86BFA /* MarvelHeros.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8DA83712030D59B00C86BFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Edwin;
+				TargetAttributes = {
+					E8DA83782030D59B00C86BFA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8DA83742030D59B00C86BFA /* Build configuration list for PBXProject "MarvelHeros" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8DA83702030D59B00C86BFA;
+			productRefGroup = E8DA837A2030D59B00C86BFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8DA83782030D59B00C86BFA /* MarvelHeros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8DA83772030D59B00C86BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA83C82032729F00C86BFA /* MHHeroDetailViewController.xib in Resources */,
+				E8DA83872030D59B00C86BFA /* LaunchScreen.storyboard in Resources */,
+				E8DA83DE20328F9600C86BFA /* MHHeroDetailItemTableViewCell.xib in Resources */,
+				E8DA83842030D59B00C86BFA /* Assets.xcassets in Resources */,
+				E8DA839E2031235800C86BFA /* MHHeroSummaryTableViewCell.xib in Resources */,
+				E8DA83B120322AF900C86BFA /* MHLoadingMoreIndicatorView.xib in Resources */,
+				E8DA83CC2032741700C86BFA /* MHHeroDetailHeaderView.xib in Resources */,
+				E8DA83E22032922E00C86BFA /* MHHeroDetailSectionHeaderView.xib in Resources */,
+				E8DA83BC20325F4E00C86BFA /* MHListHeaderView.xib in Resources */,
+				E8DA83AD203229DE00C86BFA /* MHHeroListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8DA83752030D59B00C86BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA83D220327F6300C86BFA /* MHCharacterComicsModel.swift in Sources */,
+				E8DA83EA2032978200C86BFA /* MHCharacterStoriesApi.swift in Sources */,
+				E8DA83C42032652B00C86BFA /* MHFavoriteCharacterWrapper.swift in Sources */,
+				E8DA83B620324A4B00C86BFA /* MHImageDowloader.swift in Sources */,
+				E8DA83CE20327EB100C86BFA /* MHHeroDetailViewModel.swift in Sources */,
+				E8DA83A0203140EC00C86BFA /* MHCharacterModel.swift in Sources */,
+				E8DA839A203122F000C86BFA /* MHHeroListViewController.swift in Sources */,
+				E8DA83E82032977200C86BFA /* MHCharacterEventsApi.swift in Sources */,
+				E8DA83E02032921C00C86BFA /* MHHeroDetailSectionHeaderView.swift in Sources */,
+				E8DA83E42032974600C86BFA /* MHCharacterComicsApi.swift in Sources */,
+				E8DA83A4203142A600C86BFA /* MHBaseApi.swift in Sources */,
+				E8DA83AF20322AE800C86BFA /* MHLoadingMoreIndicatorView.swift in Sources */,
+				E8DA83A62031433C00C86BFA /* MHConstants.swift in Sources */,
+				E8DA83CA2032740500C86BFA /* MHHeroDetailHeaderView.swift in Sources */,
+				E8DA83DA2032803300C86BFA /* MHCharacterDetailApi.swift in Sources */,
+				E8DA83D620327FA900C86BFA /* MHCharacterStoriesModel.swift in Sources */,
+				E8DA839D2031235800C86BFA /* MHHeroSummaryTableViewCell.swift in Sources */,
+				E8DA83C72032729F00C86BFA /* MHHeroDetailViewController.swift in Sources */,
+				E8DA83DD20328F9600C86BFA /* MHHeroDetailItemTableViewCell.swift in Sources */,
+				E8DA837D2030D59B00C86BFA /* AppDelegate.swift in Sources */,
+				E8DA83D420327F8500C86BFA /* MHCharacterSeriesModel.swift in Sources */,
+				E8DA83D820327FC600C86BFA /* MHCharacterEventsModel.swift in Sources */,
+				E8DA83E62032976400C86BFA /* MHCharacterSeriesApi.swift in Sources */,
+				E8DA83A2203141E100C86BFA /* MHHeroListViewModel.swift in Sources */,
+				E8DA83D020327F3400C86BFA /* MHCharacterDetailModel.swift in Sources */,
+				E8DA83BA20325F4000C86BFA /* MHListHeaderView.swift in Sources */,
+				E8DA83A920315B9700C86BFA /* MHCharactersApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8DA83852030D59B00C86BFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8DA83862030D59B00C86BFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8DA83892030D59B00C86BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8DA838A2030D59B00C86BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8DA838C2030D59B00C86BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MarvelHeros/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.marvelheros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MarvelHeros/MarvelHeros-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E8DA838D2030D59B00C86BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MarvelHeros/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.marvelheros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MarvelHeros/MarvelHeros-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8DA83742030D59B00C86BFA /* Build configuration list for PBXProject "MarvelHeros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DA83892030D59B00C86BFA /* Debug */,
+				E8DA838A2030D59B00C86BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8DA838B2030D59B00C86BFA /* Build configuration list for PBXNativeTarget "MarvelHeros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DA838C2030D59B00C86BFA /* Debug */,
+				E8DA838D2030D59B00C86BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8DA83712030D59B00C86BFA /* Project object */;
+}
