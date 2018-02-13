@@ -4,19 +4,19 @@
 MarvelHeros is an iPhone application which used Marvel APIs for displaying characters. It's written in swift and no thrid party libs were used. It's implemented following the MVVM design pattern, aiming to provide better separations of concerns, reducing size of view controllers and making the code more testable and maintainable .
 
 2. Structure of the app:
-Below is the general structure of the app:
 
 ---MarvelHeros
+
     ---Classes
-         ---General
-         ---Modules
-             ---MarvelHeroList
-                 ---Controller
-                 ---View
-                 ---Model
-                 ---ViewModel
+            ---General
+            ---Modules
+                ---MarvelHeroList
+                    ---Controller
+                    ---View
+                    ---Model
+                    ---ViewModel
             ---OtherModules...
-       ---APIs
+            ---APIs
 
 The difference with MVC pattern is that MVVM introduced a view model layer which will expose the right data and commands objects that view needs. In this demo, the main business logic fetching data from marvel APIs are implemented in ViewModel, and viewModel composition is more prefered than inheritance. Each one viewModel with handle one business case. Extracting of the logics in standalone viewModel make the app more testable without the UI.
 
