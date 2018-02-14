@@ -79,7 +79,7 @@ class MHHeroListViewController: UIViewController, UITableViewDelegate, UITableVi
                     //TODO: display error message to let user know what happend
                     
                 }
-                
+                MHActivityIndicatorWrapper.sharedInstance.stopActivityIndicator(vc: self.navigationController!)
                 self.herosTableView.scrollsToTop = true
                 if self.heroListViewModel.total == 0 {
                     self.listResultView.resultDescriptionLabel.text = "No records found."
@@ -303,8 +303,8 @@ class MHHeroListViewController: UIViewController, UITableViewDelegate, UITableVi
             self.heroListViewModel.nameFilter = text
             self.heroListViewModel.offset = 0
             
-            self.herosTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Loading ...")
-            
+            //self.herosTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Loading ...")
+            MHActivityIndicatorWrapper.sharedInstance.startActivityIndicator(vc: self.navigationController!)
             self.loadData()
         }
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E805AD5F203403C100AD0A5A /* MHActivityIndicatorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E805AD5E203403C100AD0A5A /* MHActivityIndicatorWrapper.swift */; };
 		E8DA837D2030D59B00C86BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA837C2030D59B00C86BFA /* AppDelegate.swift */; };
 		E8DA83842030D59B00C86BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83832030D59B00C86BFA /* Assets.xcassets */; };
 		E8DA83872030D59B00C86BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DA83852030D59B00C86BFA /* LaunchScreen.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E805AD5E203403C100AD0A5A /* MHActivityIndicatorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHActivityIndicatorWrapper.swift; sourceTree = "<group>"; };
 		E8DA83792030D59B00C86BFA /* MarvelHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DA837C2030D59B00C86BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DA83832030D59B00C86BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DA83C32032652B00C86BFA /* MHFavoriteCharacterWrapper.swift */,
+				E805AD5E203403C100AD0A5A /* MHActivityIndicatorWrapper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				E8DA837D2030D59B00C86BFA /* AppDelegate.swift in Sources */,
 				E8DA83D420327F8500C86BFA /* MHCharacterSeriesModel.swift in Sources */,
 				E8DA83D820327FC600C86BFA /* MHCharacterEventsModel.swift in Sources */,
+				E805AD5F203403C100AD0A5A /* MHActivityIndicatorWrapper.swift in Sources */,
 				E8DA83E62032976400C86BFA /* MHCharacterSeriesApi.swift in Sources */,
 				E8DA83A2203141E100C86BFA /* MHHeroListViewModel.swift in Sources */,
 				E8DA83D020327F3400C86BFA /* MHCharacterDetailModel.swift in Sources */,
